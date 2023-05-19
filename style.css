@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    transition: .3s;
+    text-decoration: none;
+}
+
+:root{
+    --button-color: #034e5c;
+    --background-color: #dffbff;
+    --text-button-color: #ffffff;
+}
+
+body{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px;
+    overflow-x: hidden;
+}
+
+
+.profile{
+    margin-bottom: 30px;
+}
+
+span.nama{
+    font-size: 1.2em;
+    margin: 10px;
+    display: inline-block;
+}
+
+.image-profile img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.socialmedia a{
+    font-size: 1.5em;
+    color: var(--button-color);
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.socialmedia a:hover{
+    transform: translateY(-5px);
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+}
+
+.contents .content{
+    background-color: var(--button-color);
+    padding: 30px 10px;
+    min-width: 450px;
+    max-width: 560px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: var(--text-button-color);
+}
+
+.contents .content:hover{
+    box-shadow: 0 0 0 0 #46909f;
+    transform: translateY(5px);
+}
+
+.inputcolor{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    padding: 10px;
+}
+
+.warna1, .warna2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputcolor input{
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .contents .content{
+        padding: 20px 10px;
+        box-sizing: border-box;
+        min-width: 70%;
+    }
+}
+
+
